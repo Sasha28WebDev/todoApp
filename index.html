@@ -24,36 +24,36 @@
 
         <div class="todo-block">
 
-            <ul class="todo-list" id="todo-list">
+            <ul class="list-group" id="todo-list">
 
             </ul>
 
-            <div class="todo-filters">
+            <div class=" d-flex justify-content-between todo-filters mb-5">
                 <button type="button" class="btn btn-primary">
-                    items left <span class="todo-left badge bg-secondary">4</span>
+                    items left <span class="todo-left badge bg-secondary">0</span>
                   </button>
 
                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                    <label class="todo-filters-all btn btn-outline-primary" for="btnradio1">All</label>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"  autocomplete="off" checked>
+                    <label class=" btn btn-outline-primary" id="todo-filters-all" for="btnradio1">All</label>
 
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                    <label class="todo-filters-active btn btn-outline-primary" for="btnradio2">Active</label>
+                    <label class=" btn btn-outline-primary" id="todo-filters-active" for="btnradio2">Active</label>
 
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                    <label class="todo-filters-completed btn btn-outline-primary" for="btnradio3">Completed</label>
+                    <label class=" btn btn-outline-primary" id="todo-filters-completed" for="btnradio3">Completed</label>
                 </div>
 
             
-            <button type="button" class="todo-clear-completed btn btn-warning">Clear Completed</button>
+            <button type="button" class="todo-clear-completed btn btn-warning" id="todo-clear-completed" >Clear Completed</button>
             </div>
         </div>
     </div>
     </div>
 
     <footer>
-        <div class="attribution w-100">
-            Coded by <a href="https://github.com/Sasha28WebDev">Sasha28WebDev</a>.
+        <div class="d-flex justify-content-center attribution w-100">
+            <pre>Coded by <a class="text-decoration-none" href="https://github.com/Sasha28WebDev">Sasha28WebDev</a>.</pre>
 
         </div>
     </footer>
