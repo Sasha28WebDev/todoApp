@@ -3,7 +3,6 @@ const taskInput = document.querySelector('#todo-input')
 const todoList = document.querySelector('#todo-list')
 const todoLeft = document.querySelector('.todo-left')
 
-let tasks = []
 
 container.addEventListener('click', (evt) => {
     if (evt.target.id == 'todo-add-btn') {
@@ -11,6 +10,8 @@ container.addEventListener('click', (evt) => {
         if (taskInput.value === "") {
             alert('input value is empty')
         } else {
+
+            let tasks = []
             let newTask = {
                 text: taskInput.value,
                 checked: false,
