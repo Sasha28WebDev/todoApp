@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>todo list</title>
@@ -12,7 +14,7 @@
 
 <body>
 
-    <div class="container w-50 pt-3">
+    <div class="container w-md-50 pt-3">
         <h1 class="d-flex justify-content-center">Todo List for you!</h1>
 
         <form class="todo-form" action="">
@@ -28,24 +30,29 @@
 
             </ul>
 
-            <div class=" d-flex justify-content-between todo-filters mb-5">
-                <button type="button" class="btn btn-primary">
+            <div class=" d-flex justify-content-between todo-filters flex-column flex-md-row mb-5">
+                <button type="button" class=" mb-2 mb-md-0 btn btn-primary">
                     items left <span class="todo-left badge bg-secondary">0</span>
-                  </button>
+                </button>
 
-                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"  autocomplete="off" checked>
-                    <label class=" btn btn-outline-primary" id="todo-filters-all" for="btnradio1">All</label>
+                <div class="d-flex btn-group-md flex-column flex-md-row " role="group"
+                    aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class=" mb-2 mb-md-0 btn btn-outline-primary js-todo-filters-all w-xs-100" id="todo-filters-all"
+                        for="btnradio1">All</label>
 
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                    <label class=" btn btn-outline-primary" id="todo-filters-active" for="btnradio2">Active</label>
+                    <label class=" mb-2 mb-md-0 btn btn-outline-primary js-todo-filters-active w-xs-100" id="todo-filters-active"
+                        for="btnradio2">Active</label>
 
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                    <label class=" btn btn-outline-primary" id="todo-filters-completed" for="btnradio3">Completed</label>
+                    <label class=" mb-2 mb-md-0 btn btn-outline-primary js-todo-filters-completed w-xs-100"
+                        id="todo-filters-completed" for="btnradio3">Completed</label>
                 </div>
 
-            
-            <button type="button" class="todo-clear-completed btn btn-warning" id="todo-clear-completed" >Clear Completed</button>
+
+                <button type="button" class="js-todo-clear-completed btn btn-warning" id="todo-clear-completed">Clear
+                    Completed</button>
             </div>
         </div>
     </div>
