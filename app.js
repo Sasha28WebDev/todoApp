@@ -6,7 +6,7 @@ const todoLeft = document.querySelector('.todo-left')
 
 let tasks = []
 container.addEventListener('click', (evt) => {
-    if (evt.target.id == 'todo-add-btn') {
+    if (evt.target.classList.contains('js-todo-add-btn')) {
         evt.preventDefault()
         if (taskInput.value === "") {
             alert('input value is empty')
@@ -73,7 +73,7 @@ container.addEventListener('click', (evt) => {
             }
         })
     }
-    if (evt.target.classList.contains('js-todo-clear-complete')) {
+    if (evt.target.classList.contains('js-todo-clear-completed')) {
         tasks = JSON.parse(localStorage.getItem('tasks'))
         todoList.innerHTML = ""
         tasks = tasks.filter(el => el.checked == false)
@@ -103,7 +103,7 @@ function addTodo(value, id) {
         checked = "checked"
     }
     todoList.innerHTML += `
-          <li class="list-group-item mb-3 d-flex align-items-center" id ='${id}'>
+          <li class="list-group-item mb-3 d-flex align-items-center" id ='${id}' >
         <input class="todo-checkbox form-check-input me-1" type="checkbox" name="todo-check-${id}" ${checked} value="" aria-label="...">
         <label for='todo-check-${id}'>${value.text}</label>
        <button type="button" class="js-todo-del-btn ms-auto btn  btn-outline-danger">

@@ -20,7 +20,7 @@
         <form class="todo-form" action="">
             <div class="input-group mb-3">
                 <input type="text" name="todo" id="todo-input" class="form-control" placeholder="write your task here">
-                <button class="btn btn-outline-secondary" type="submit" id="todo-add-btn">Add</button>
+                <button class="btn btn-outline-secondary js-todo-add-btn" type="submit">Add</button>
             </div>
         </form>
 
@@ -38,20 +38,20 @@
                 <div class="d-flex btn-group-md flex-column flex-md-row " role="group"
                     aria-label="Basic radio toggle button group">
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                    <label class=" mb-2 mb-md-0 btn btn-outline-primary js-todo-filters-all w-xs-100" id="todo-filters-all"
+                    <label class=" mb-2 mb-md-0 btn btn-outline-primary js-todo-filters-all w-xs-100" 
                         for="btnradio1">All</label>
 
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                    <label class=" mb-2 mb-md-0 btn btn-outline-primary js-todo-filters-active w-xs-100" id="todo-filters-active"
+                    <label class=" mb-2 mb-md-0 btn btn-outline-primary js-todo-filters-active w-xs-100" 
                         for="btnradio2">Active</label>
 
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
                     <label class=" mb-2 mb-md-0 btn btn-outline-primary js-todo-filters-completed w-xs-100"
-                        id="todo-filters-completed" for="btnradio3">Completed</label>
+                         for="btnradio3">Completed</label>
                 </div>
 
 
-                <button type="button" class="js-todo-clear-completed btn btn-warning" id="todo-clear-completed">Clear
+                <button type="button" class="js-todo-clear-completed btn btn-warning">Clear
                     Completed</button>
             </div>
         </div>
